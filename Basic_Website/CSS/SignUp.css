@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styles */
+.container {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Error and Success Message Styles */
+.error, .success {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.error {
+    color: #f04e42; /* Red color for errors */
+}
+
+.success {
+    background-color: #5cb960; /* Green color for success */
+}
+
+.success a.login-button {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Button Styles */
+input[type="submit"] {
+    background-color: #007bff; /* Blue color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+/* Anchor Link Styles */
+.login-button {
+    color: #fff; /* White text color */
+    background-color: #7ac37d; /* Blue background color */
+    text-decoration: none; /* Remove underline */
+    padding: 8px 15px; /* Padding for better appearance */
+    border-radius: 4px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    display: inline-block; /* Ensure proper spacing and alignment */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.login-button:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+}

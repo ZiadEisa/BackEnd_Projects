@@ -1,0 +1,210 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+/* Header styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distributes space between items */
+    padding: 20px;
+    background-color: #0055ff; /* Light background for contrast */
+}
+
+/* Icon styling */
+.blog-icon {
+    width: 80px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between icon and heading */
+}
+
+/* Heading styling */
+h1 {
+    margin: 0; /* Remove default margin */
+    color: wheat;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Align list items horizontally */
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between navigation items */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* No margin for the first item */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Dark color for text */
+    font-weight: bold;
+}
+
+/* Optional: Add hover effect for links */
+nav ul li a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+/* Featured Post Section Styles */
+.featured-post {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Flex container for form elements */
+.featured-post form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Style for the heading */
+.featured-post h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Style for the textarea */
+.post-text {
+    width: 100%; /* Full width */
+    height: 150px; /* Fixed height */
+    padding: 10px; /* Add padding */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Larger font size */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-bottom: 15px; /* Space below the textarea */
+}
+
+/* Flex container for file input and submit button */
+.input-group {
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    gap: 10px; /* Space between the file input and the button */
+}
+
+/* Style for the file input */
+input[type="file"] {
+    padding: 5px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Style for the submit button */
+input.post-now {
+    background-color: #28a745; /* Green background */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for button look */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Larger font size */
+    cursor: pointer; /* Pointer cursor */
+}
+
+input.post-now:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Recent Posts Section Styles */
+.recent-posts {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recent-posts h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.recent-posts article {
+    margin-bottom: 20px;
+}
+
+.recent-posts h3 {
+    font-size: 20px;
+    color: #007bff;
+    margin: 0 0 10px;
+}
+
+.recent-posts p {
+    margin: 0 0 10px;
+}
+
+.recent-posts .read-more {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.recent-posts .read-more:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed; /* Fixed position at the bottom */
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Base styles for the message container */
+#message {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position so it stays in place */
+    top: 20px; /* Adjust this value as needed */
+    right: 20px; /* Adjust this value as needed */
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 1000; /* Ensure it appears above other content */
+    transition: opacity 0.5s ease-in-out; /* Ensure transition matches fade-out effect */
+}
+
+/* Success message styles */
+.message-success {
+    background-color: #28a745; /* Green for success */
+    border: 1px solid #1e7e34; /* Darker green border */
+}
+
+/* Failure message styles */
+.message-fail {
+    background-color: #dc3545; /* Red for failure */
+    border: 1px solid #c82333; /* Darker red border */
+}
+
+/* Optional: Add a fade-out effect */
+#message.fade-out {
+    opacity: 0;
+}
