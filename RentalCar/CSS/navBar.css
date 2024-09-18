@@ -1,0 +1,95 @@
+/* Navigation Bar Styling */
+.nav-bar {
+  position: fixed; /* Keeps the navbar fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 30px; /* Adjust padding as needed */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8); /* Slightly darker for better visibility */
+  color: white; /* Text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  z-index: 1000; /* Ensures the navbar is on top of other content */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  overflow: hidden; /* Prevent overflow */
+}
+
+/* Navigation List */
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.nav-list li {
+  margin-left: 20px;
+}
+
+.nav-list a,
+.nav-list button {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+  border: none; /* Remove default button border */
+  background: none; /* Remove default button background */
+  cursor: pointer; /* Pointer cursor for clickable elements */
+}
+
+/* Button Specific Styling */
+.nav-list button {
+  background-color: transparent; /* Transparent background for button */
+  padding: 0; /* Remove default button padding */
+  border: none; /* Remove default button border */
+  font-size: 1.2rem; /* Same font size as links */
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list button:hover,
+.nav-list button:focus {
+  color: #f39c12; /* Highlight color on hover/focus */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.nav-list a:active,
+.nav-list button:active {
+  color: #e67e22; /* Active color when clicked */
+}
+
+.nav-bar .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ecf0f1;
+  text-transform: uppercase;
+}
+
+/* Main Content Styling */
+.content {
+  padding-top: 80px; /* Space for the fixed navbar */
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .nav-bar {
+    padding: 15px;
+    flex-direction: column;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}

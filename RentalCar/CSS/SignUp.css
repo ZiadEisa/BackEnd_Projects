@@ -1,0 +1,131 @@
+/* Success and Error Message Styles */
+#message {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  opacity: 1;
+  display: none;
+  transition: opacity 2s ease-out; /* Smooth fade-out */
+  z-index: 1000;
+}
+
+/* Success message style */
+.success {
+  background-color: #4CAF50; /* Green */
+}
+
+/* Error message style */
+.error {
+  background-color: #f44336; /* Red */
+}
+
+/* Fade-out class */
+.fade-out {
+  opacity: 0;
+}
+
+
+
+/* Sign-Up Form Container */
+.sign-up-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url('../Images/login.jpg') no-repeat center center; /* Background image */
+  background-size: cover; /* Ensure the image covers the whole container */
+  color: white;
+}
+
+/* Form Title */
+.form-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Sign-Up Form */
+.sign-up-form {
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Enhanced shadow */
+  max-width: 500px; /* Limit form width for better appearance */
+  width: 100%;
+}
+
+/* Form Labels */
+.sign-up-form label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #ecf0f1; /* Light color for labels */
+}
+
+/* Form Inputs */
+.sign-up-form input[type="text"],
+.sign-up-form input[type="email"],
+.sign-up-form input[type="password"] {
+  width: calc(100% - 1rem); /* Adjust width to account for padding */
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: #2c3e50; /* Dark background for inputs */
+  color: #ecf0f1; /* Light text color */
+}
+
+/* Submit and Reset Buttons */
+.submit-btn, .reset-btn {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.submit-btn {
+  background-color: #f39c12;
+}
+
+.submit-btn:hover {
+  background-color: #e67e22;
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.reset-btn {
+  background-color: #c0392b;
+}
+
+.reset-btn:hover {
+  background-color: #e74c3c;
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Error and Success Messages */
+.error, .success {
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  max-width: 500px; /* Limit message width */
+  width: 100%;
+}
+
+.error {
+  background-color: #e74c3c;
+}
+
+.success {
+  background-color: #2ecc71;
+}

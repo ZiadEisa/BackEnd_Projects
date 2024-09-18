@@ -1,0 +1,254 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Car Details Section */
+.car-details {
+  background-color: #48728b;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+  padding: 30px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.car-details:hover {
+  background-color: #7e7676;
+}
+
+.car-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.car-header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.car-header h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.car-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Car Info Section */
+.car-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.car-info div {
+  width: 48%;
+}
+
+.car-info p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.availability {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #28a745;
+  color: white;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #218838;
+}
+
+.waiting-list {
+  background-color: #ffc107;
+}
+
+.waiting-list:hover {
+  background-color: #e0a800;
+}
+
+/* Car Inner Images Section */
+.car-inner-images {
+  margin-top: 40px;
+}
+
+.car-inner-images h3 {
+  margin-bottom: 20px;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.inner-images-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.inner-images-wrapper img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.inner-images-wrapper img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .car-info div {
+    width: 100%;
+  }
+
+  .car-header h1 {
+    font-size: 2rem;
+  }
+
+  .car-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .inner-images-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .car-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .car-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .car-header h2 {
+    font-size: 1.1rem;
+  }
+
+  .button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .car-info {
+    flex-direction: column;
+  }
+
+  .inner-images-wrapper img {
+    width: 100%;
+  }
+}
+
+/* General styles for forms and messages */
+#rent-form,
+#date-form {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#rent-form label,
+#date-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#rent-form input,
+#date-form input {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#rent-form button,
+#date-form button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#rent-form button:hover,
+#date-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for messages */
+.message {
+  display: none;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+#success_message {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+#error_message {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}

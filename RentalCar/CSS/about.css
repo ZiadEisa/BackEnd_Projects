@@ -1,0 +1,148 @@
+/* Navigation Bar Styling */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(0,0,0,0.8), rgba(0,0,0,0.6)); /* Gradient background */
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.nav-list li {
+  margin-left: 20px;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600; /* Slightly bolder text */
+  transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-list a:hover, .nav-list a:focus {
+  color: #f39c12;
+  transform: translateY(-3px); /* Increased movement on hover */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); /* Subtle shadow on text */
+}
+
+.nav-list a:active {
+  color: #e67e22;
+}
+
+.nav-bar .logo {
+  font-size: 1.7rem; /* Larger logo font */
+  font-weight: 800; /* Bolder logo text */
+  color: #ecf0f1;
+  text-transform: uppercase;
+}
+
+/* Main Content Styling */
+.content {
+  padding: 100px 30px 30px; /* Added top padding to accommodate fixed navbar */
+}
+
+.ceo-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px; /* Increased margin */
+  border-bottom: 2px solid #f39c12; /* Border at the bottom */
+  padding-bottom: 20px; /* Padding for spacing */
+  background-color: #f8f9fa; /* Light background */
+}
+
+.ceo-photo img {
+  width: 200px; /* Larger photo */
+  height: 200px;
+  border-radius: 50%;
+  border: 6px solid #f39c12; /* Thicker border */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.ceo-photo img:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.ceo-info {
+  margin-left: 30px; /* Increased margin */
+  max-width: 600px; /* Limit width */
+}
+
+.ceo-info h1 {
+  font-size: 2.5rem; /* Larger heading */
+  color: #333;
+  margin-bottom: 10px; /* Margin below heading */
+}
+
+.ceo-info p {
+  font-size: 1.1rem; /* Slightly larger text */
+  color: #555; /* Darker text color */
+  line-height: 1.6; /* Increased line height */
+  margin-bottom: 15px; /* Margin between paragraphs */
+}
+
+.about-info {
+  background-color: #ffffff; /* White background */
+  padding: 40px; /* Padding for content */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.about-info h2 {
+  font-size: 2rem; /* Larger heading */
+  color: #333;
+  margin-bottom: 20px; /* Margin below heading */
+}
+
+.about-info p {
+  font-size: 1.1rem; /* Slightly larger text */
+  color: #555; /* Darker text color */
+  line-height: 1.6; /* Increased line height */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .nav-bar {
+    padding: 15px;
+    flex-direction: column;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .ceo-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ceo-photo {
+    margin-bottom: 20px;
+  }
+
+  .ceo-info {
+    text-align: center;
+  }
+}
